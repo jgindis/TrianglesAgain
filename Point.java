@@ -26,4 +26,10 @@ public class Point {
     return distance;
   }
 
+  public boolean equals(Point other) {
+    if (x == other.x && y == other.y) return true;
+    else return false;
+  }
+
+
 }
