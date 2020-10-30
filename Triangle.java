@@ -22,10 +22,15 @@ public class Triangle {
     double perimeter = Point.distanceTo(v1)
                      + Point.distanceTo(v2)
                      + Point.distanceTo(v3);
+    return perimeter;
   }
 
   public double getArea() {
-    //Return the area using Heron's formula without any rounding.
+    double p = getPerimeter();
+    double A = Math.sqrt(p*(p-Point.distanceTo(v1))
+                          *(p-Point.distanceTo(v2))
+                          *(p-Point.distanceTo(v3)));
+    return A;
   }
 
   public String classify() {
