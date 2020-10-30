@@ -27,8 +27,7 @@ public class Point {
   }
 
   public boolean equals(Point other) {
-    if (x == other.x && y == other.y) return true;
-    else return false;
+    return(x == other.getX() && y == other.getY());
   }
 
 
