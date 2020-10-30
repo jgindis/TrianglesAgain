@@ -19,7 +19,9 @@ public class Triangle {
   }
 
   public double getPerimeter() {
-    //Return the perimeter without any rounding.
+    double perimeter = Point.distanceTo(v1)
+                     + Point.distanceTo(v2)
+                     + Point.distanceTo(v3);
   }
 
   public double getArea() {
